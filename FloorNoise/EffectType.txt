@@ -1,0 +1,16 @@
+Tuner
+Wah
+Compressor
+Booster
+Equalization
+Pitch
+Synth
+Overdrive
+Distortion
+Fuzz
+Modulation
+Delay
+Reverb
+Tremolo
+Looper
+Amp Simulator

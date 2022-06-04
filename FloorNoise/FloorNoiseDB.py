@@ -1,6 +1,7 @@
 import os
 import sys
 import sqlite3 as sql
+import FileMgmt as f
 
 def getDatabaseName(app_dir):
 
@@ -23,7 +24,7 @@ def getDatabaseConnection(db_name):
         connection.cursor().execute('PRAGMA foreign_keys = ON;')
     
     return connection
-
+    
 def getTableNames():
 
     return ['User',
@@ -140,6 +141,9 @@ def getTableCreationQueries():
 
 def validateTableDefinitions(tbl_Names, tbl_Queries):
 
+    #This function ensures the list of table names and
+    #Create table queries stays in sync
+    
     tbl_Ct = len(tbl_Names)
 
     if tbl_Ct != len(tbl_Queries):
